@@ -54,9 +54,40 @@ Our project, **Kitsune and DuckySlayer**, explores and demonstrates the dangers 
 
 ---
 
-## 📷 System Flow Diagram (Recommended)
+## 📷 System Diagram
 
-> _Insert diagram here and describe it:_
-```markdown
-![System Diagram](images/system_diagram.png)
-*Figure: Overview of the system showing ESP32, relay switching, Raspberry Pi Pico, and USB host.*
+![System Diagram - HID Attack Flow](images/system_diagram.png)  
+*Figure: Flowchart of the HID attack process. The device starts in Mouse Mode, then connects to a Node.js server. Upon user interaction (pressing the Kitsune button), it switches to Keystroke Injection Mode. If a prevention script is running in the background, the system is locked automatically; otherwise, the injection attack proceeds.*
+
+---
+
+## 🧠 Why This Matters
+
+HID attacks are **stealthy, fast, and hard to detect**.  
+Even secure systems are vulnerable if physical access is granted for just a few seconds.
+
+Our project is a **learning tool** that helps cybersecurity enthusiasts and educators:
+- Understand the **risks of HID devices**
+- Build **defensive mechanisms**
+- Think like an attacker to design **better protections**
+
+---
+
+## 🚀 Tech Stack
+
+| Component           | Description                            |
+|--------------------|----------------------------------------|
+| `ESP32`            | Wi-Fi enabled microcontroller          |
+| `Raspberry Pi Pico`| HID emulation via USB                  |
+| `Node.js` + `Express` | Web server and API for trigger        |
+| `Relay Module`     | Physical USB switching mechanism       |
+| `DuckyScript`      | Payload scripting language             |
+| `Python`           | Middleware to interpret DuckyScript    |
+| `Windows Lock App` | USB monitoring & auto-lock tool        |
+
+---
+
+## ⚠️ Disclaimer
+
+This project is for **educational and ethical hacking** purposes only.  
+Use responsibly and **do not deploy on machines without explicit permission**.
