@@ -1,0 +1,6 @@
+DELAY 200
+WINDOWS r
+DELAY 200
+STRING micorsoft.windows.camera:
+ENTER
+DELAY 200
