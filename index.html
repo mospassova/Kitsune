@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="kitsune.css">
+	
+	<script>
+		function buttonPress() {
+			var xhttp = new XMLHttpRequest();
+			xhttp.open("GET", "/button", true);
+			xhttp.send();
+			var red_eye = document.getElementById("red-eye");
+  			red_eye.style.opacity = 1;
+			var btn = document.getElementById("unleash/abort");
+		}
+	</script>
+</head>
+<body style="background-color: rgb(10, 10, 10);">
+
+	<div class="kitsu_div">
+		<img id="white-eye" src="C:\Users\Alexander\Documents\comding\Zaloopenite\Kitsune.png" alt="kitsune">
+		<img id="red-eye" src="C:\Users\Alexander\Documents\comding\Zaloopenite\Kitsune_unleashed.png" alt="Kitsune_unleashed">
+	</div>
+
+	<button class="attack_button" id="unleash/abort" onclick="buttonPress()">Unleash the fox!</button>
+
+</body>
+
+
+</html>
