@@ -112,7 +112,7 @@ Our project, **Kitsune and DuckySlayer**, explores and demonstrates the dangers 
 
 ## 📷 System Diagram
 
-![System Diagram - HID Attack Flow](main/system_diagram.png)  
+![System Diagram - HID Attack Flow](./system_diagram.png)  
 *Figure: Flowchart of the HID attack process. The device starts in Mouse Mode, then connects to a Node.js server. Upon user interaction (pressing the Kitsune button), it switches to Keystroke Injection Mode. If a prevention script is running in the background, the system is locked automatically; otherwise, the injection attack proceeds.*
 
 ---
