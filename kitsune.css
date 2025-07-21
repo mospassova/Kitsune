@@ -1,0 +1,38 @@
+.attack_button{
+    position: relative;
+    left: 820px;
+    top: 80px;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.attack_button:hover{
+    background-color: rgb(199, 56, 84);
+    color:black;
+}
+
+.kitsu_div {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    /* background-image: url('Kitsune.png'); First image of the face */
+    background-size: cover;
+    transition: opacity 1s ease-in-out;
+  }
+
+  #white-eye {
+    position: absolute;
+    top: 0;
+    left: 710px;
+    
+  }
+  
+  #red-eye {
+    position: absolute;
+    top: 0;
+    left: 710px;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+  }
